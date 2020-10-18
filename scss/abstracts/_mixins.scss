@@ -1,0 +1,13 @@
+@mixin breakpoint($size: 'large') {
+    $breakpoint-min-width: $breakpoint-large-min-width;
+
+    @media (min-width: $breakpoint-min-width) {
+        @content;
+    }
+}
+
+@mixin breakpoint-large {
+    @include breakpoint('large') {
+        @content;
+    }
+}
