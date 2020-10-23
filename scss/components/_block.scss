@@ -1,0 +1,39 @@
+.block {
+    
+    &--image {
+        background: url("/images/pattern-bg.svg")no-repeat;
+        
+        background-size: contain;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__navigation {
+            position: absolute;
+            left: calc(50% - (13px + 1rem));
+            right: calc(50% - (13px + 1rem));
+            bottom: calc(-9px - .5rem);
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            width: calc(26px + 2rem);
+            padding: .5rem;
+            border-radius: 20px;
+        }
+    }
+
+    &--text {
+        
+        height: 50vh;
+        background: 
+        url("/images/pattern-curve.svg") bottom left / 100% no-repeat,
+        url("/images/pattern-quotes.svg") top -1rem center / 20% no-repeat ;
+
+        //background-size: 120%;
+        
+    }
+}
