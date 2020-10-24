@@ -1,52 +1,76 @@
 .author {
 
-
     &__image {
-        width: 78%;
         height: auto;
         display: block;
-        margin-top: -2rem;
         position: relative;
+        margin: auto;
+        width: 78%;
+        @include breakpoint-large {
+            width: 70%;
+            margin-left: 8%;
+        }
+        
         &::after {
             display: block;
             content: '';
             width: calc(50% + 13px + 1rem);
             height: 100%;
             box-shadow: 5px 15px 30px 7px $color-text-secondary;
-
         }
         
-
         & img {
             width: 100%;
             border-radius: 5px;
-            
+            display: block;
+            margin: auto;
         }
-       
     }
 
     &__testimonial {
         font-size: $font-size-mobile;
         font-weight: $font-weight-light;
         color: $color-text-primary;
-        padding: 2rem;
-        //padding-top: 1rem;
+        padding: 0 2rem;
         text-align: center;
         line-height: 1.2;
+        
+        @include breakpoint-large {
+            font-size: $font-size;
+            text-align: left;
+            width: 112%;
+            margin-left: 7vw;
+            padding-top: 10vh;
+            background: 
+            url("/images/pattern-quotes.svg") top left 15vh / 20% no-repeat;
+        }
     }
 
     &__name {
         text-align: center;
         font-weight: $font-weight-bold;
-        margin-bottom: .5rem;
-        
+        padding-bottom: .5rem;
+        padding-top: 1.5rem;
+        @include breakpoint-large {
+            padding: 0;
+        }
     }
 
     &__job {
         text-align: center;
         font-weight: $font-weight;
         color: $color-text-secondary;
+        margin-bottom: 10vh;
+        @include breakpoint-large {
+            margin-left: 1rem;
+        }
+    }
 
-
+    &__information {
+        @include breakpoint-large {
+            display: flex;
+            margin-left: 7vw;
+            padding: 2rem;
+        }
     }
 }
