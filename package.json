@@ -2,13 +2,14 @@
   "name": "coding-bootcamp-testimonials-slider",
   "version": "1.0.0",
   "description": "Frontend Mentor's challenge number 4",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html --public-url ./"
   },
   "author": "Charlene Zybala",
   "dependencies": {
+    "data.js": "^0.12.11",
     "reset-css": "^5.0.1"
   },
   "devDependencies": {
