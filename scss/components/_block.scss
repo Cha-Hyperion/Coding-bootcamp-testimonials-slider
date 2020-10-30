@@ -1,17 +1,15 @@
 .block {
     
     &--image {
-        background: url("/images/pattern-bg.svg")no-repeat;
-        background-size: contain;
         height: 50%;
-        width: 90%;
-        margin: auto;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         @include breakpoint-large {
-            height: 75vh;
-            width: 50vw;
+            height: 100vh;
+            width: 40%;
+            margin-right: 10vw;
         }
 
         &__navigation {
@@ -25,6 +23,12 @@
             width: calc(26px + 2rem);
             padding: .5rem;
             border-radius: 20px;
+            @include breakpoint-large {
+                left: 5%;
+                bottom: calc(-9px - 1rem);
+                padding: 1rem;
+                border-radius: 30px;
+            }
         }
     }
 
@@ -36,17 +40,24 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin-top: -1rem;
         background: 
-            url("/images/pattern-quotes.svg") top center / 20% no-repeat;
+            url("/images/pattern-quotes.svg") top 12% center / 17% no-repeat;
         @include breakpoint-large {
-            height: calc(100vh - 2rem);
-            width: 40vw;
+            height: 100vh;
+            width: 40%;
             background: none;
-            padding-top: 3rem;
+            margin-left: 10vw;
         }
 
-        
-       
+        &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
     }
 
 }
+

@@ -1,29 +1,38 @@
 .author {
 
     &__image {
-        height: auto;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
-        margin: auto;
-        width: 78%;
+        width: 90vw;
+        height: 95%;
+        background: url("/images/pattern-bg.svg")no-repeat;
+        background-size: contain;
+        background-position: center;
         @include breakpoint-large {
-            width: 70%;
-            margin-left: 8%;
-        }
-        
-        &::after {
-            display: block;
-            content: '';
-            width: calc(50% + 13px + 1rem);
-            height: 100%;
-            box-shadow: 5px 15px 30px 7px $color-text-secondary;
-        }
-        
-        & img {
             width: 100%;
+        }        
+        
+        &__container {
+            width: 80%;
+            height: 83%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            @include breakpoint-large {
+                width: 60%;
+                height: 60%;
+            }   
+            
+        }
+
+        & img {
+            width: auto;
+            height: 100%;
             border-radius: 5px;
             display: block;
-            margin: auto;
         }
     }
 
@@ -38,8 +47,8 @@
         @include breakpoint-large {
             font-size: $font-size;
             text-align: left;
-            width: 112%;
-            margin-left: 7vw;
+            width: 110%;
+            margin-left: 10vw;
             padding-top: 10vh;
             background: 
             url("/images/pattern-quotes.svg") top left 15vh / 20% no-repeat;
@@ -50,7 +59,7 @@
         text-align: center;
         font-weight: $font-weight-bold;
         padding-bottom: .5rem;
-        padding-top: 1.5rem;
+        padding-top: 2rem;
         @include breakpoint-large {
             padding: 0;
         }
@@ -60,7 +69,6 @@
         text-align: center;
         font-weight: $font-weight;
         color: $color-text-secondary;
-        margin-bottom: 10vh;
         @include breakpoint-large {
             margin-left: 1rem;
         }
@@ -69,8 +77,9 @@
     &__information {
         @include breakpoint-large {
             display: flex;
-            margin-left: 7vw;
             padding: 2rem;
+            align-self: flex-start;
+            margin-left: .5rem;
         }
     }
 }
