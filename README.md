@@ -1,5 +1,9 @@
 # Frontend Mentor - Coding Bootcamp Testimonials Slider
 
+👀 See my version in production : https://coding-bootcamp-testimonials-slider-delta-two.vercel.app/
+
+👩🏼‍💻 My personal website : https://charlenezybala.com
+
 ![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
